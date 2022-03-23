@@ -73,7 +73,7 @@ function App() {
                   <i className="fa fa-github-square" aria-hidden="true" />
                 </a>
                 <a
-                  href="linkedin.com/in/aboulaye-tchakoura/"
+                  href="https://linkedin.com/in/aboulaye-tchakoura/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
