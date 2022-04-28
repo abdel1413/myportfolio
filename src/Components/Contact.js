@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import "tachyons";
 
 class Contact extends Component {
   constructor(props) {
@@ -15,8 +16,8 @@ class Contact extends Component {
     this.setState({ Name: e.target.value });
     // console.log(e.target.value)
     const fm = e.target.value;
-    console.log("/////////////", fm);
-    //   alert(`hey ${fm} your message was successful sent`);
+
+    alert(`hey ${fm} your message was successful sent`);
   };
 
   handleEmail = (e) => {
@@ -39,10 +40,11 @@ class Contact extends Component {
 
   render() {
     return (
-      <form className="register_components">
-        <div>
+      <form className="register_components  grow-5">
+        <div className="register-form">
+          <h2 className="register">register </h2>
           <label>
-            Name :
+            Name
             <input
               type="text"
               name="name"
@@ -54,19 +56,26 @@ class Contact extends Component {
         <br />
         <div>
           <label>
-            Phone :
+            Phone
             <input type="text" name="name" />
           </label>
         </div>
         <br />
         <div>
           <label>
-            Email :
+            Email
             <input type="text" email="email" />
           </label>
         </div>
         <button
-          style={{ background: "blue", borderRadius: "12px" }}
+          style={{
+            borderRadius: "10px",
+            background: "#833ab4",
+            padding: "5px",
+            width: "90px",
+            marginLeft: "120px",
+            marginTop: "10px",
+          }}
           onClick={this.onFormSubmit}
         >
           {" "}

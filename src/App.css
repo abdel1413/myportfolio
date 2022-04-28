@@ -1,29 +1,23 @@
-
-.header{
-  background: #833ab4;  
+.header {
+  background: #833ab4;
   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   /* position: fixed;
   margin-top: 0;
   margin-left: 0; */
 }
 
-.page-content{
-  background: #833ab4;  
+.page-content {
+  background: #833ab4;
   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   text-align: center;
-  /* position: fixed;
-  margin-top: 0;
-  margin-left: 0; */
-  
 }
 
-.cont{
+.cont {
   display: grid;
   justify-content: center;
-  align-content: center; 
-  
+  align-content: center;
 }
 
 /* img{
@@ -32,79 +26,105 @@
   width: 150px;
 } */
 
-.text-banner{
+.text-banner {
   background-color: black;
-  opacity: .8;
-  margin:auto;
+  opacity: 0.8;
+  margin: auto;
   width: 70%;
   border-radius: 10px;
 }
 
-.text-banner h1{
+.text-banner h1 {
   font-size: 55px;
   font-weight: bold;
   color: white;
   text-align: center;
 }
 
-.text-banner hr{
+.text-banner hr {
   border-top: 5px dotted white;
   margin: auto;
   width: 50%;
 }
 
-.text-banner p{
+.text-banner p {
   color: white;
   font-size: 20px;
   padding: 1em;
 }
 
-.Social_Links{
+.Social_Links {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
   margin: auto;
 }
 
-.Social_Links i{
+.Social_Links i {
   color: white;
   padding: 5px;
   font-size: 3em;
 }
 
-.register_components{
+/* .register_components {
   text-align: center;
   margin-top: 100px;
-  
-}
-.register_components button{
+} */
+.register_components button {
   margin-top: 5px;
   padding: 2px;
   border-radius: 12px solid black;
   font-size: 15px;
-} 
-
-
-#photo{
-    border-radius: 50%;
-    height: auto;
-    width: 200px;
-    padding-top: 0px;
-
 }
-#my-pic{
+
+#photo {
+  border-radius: 50%;
+  height: auto;
+  width: 200px;
+  padding-top: 0px;
+}
+#my-pic {
   text-align: center;
-   margin: 10px; 
-   height: auto;
+  margin: 10px;
+  height: auto;
   /* width: 50%;
   height: 50%; */
 }
-#my-resume a{
-  
- display: flex;
-  color:blue; 
-   font-size: 1em;
-  font-weight: 30px; 
- margin-left: auto;
- 
+#my-resume a {
+  display: flex;
+  color: blue;
+  font-size: 1em;
+  font-weight: 30px;
+  margin-left: auto;
 }
 
+.register_components {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+
+  text-align: center;
+  border: blue solid 1px;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 20px;
+  background: linear-gradient(to right, #f7bb69, #dd6161, #ad74d3);
+  box-shadow: 10px 10px lightgray inset;
+}
+.register {
+  color: #4e39c8;
+}
+
+input {
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+label {
+  background-color: limegreen;
+  font-size: 20px;
+}
+
+input:hover {
+  background-color: rgb(41, 38, 44);
+}
