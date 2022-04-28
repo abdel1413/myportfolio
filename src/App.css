@@ -51,18 +51,20 @@
   color: white;
   font-size: 20px;
   padding: 1em;
+  display: flex;
+  justify-content: center;
 }
 
 .Social_Links {
   display: flex;
-  justify-content: space-around;
-  margin: auto;
+  justify-content: center;
 }
 
 .Social_Links i {
   color: white;
   padding: 5px;
   font-size: 3em;
+  margin: 20px;
 }
 
 /* .register_components {

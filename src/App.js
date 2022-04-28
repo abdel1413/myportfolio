@@ -43,16 +43,7 @@ function App() {
             <div className="cont" style={{ width: "100%", margin: "auto" }}>
               <Grid className="content">
                 <Cell col={10}>
-                  {/* <div id = "photo-container" > */}
-                  <img
-                    id="photo"
-                    //  src ='https://cdn0.iconfinder.com/data/icons/avatars-6/500/Avatar_boy_man_people_account_client_male_person_user_work_sport_beard_team_glasses-512.png'
-                    //  alt="avator" />
-
-                    src={photo}
-                    alt=""
-                  />
-                  {/* </div> */}
+                  <img id="photo" src={photo} alt="" />
                   <h2>A.Tchakoura</h2>
                 </Cell>
               </Grid>
@@ -60,7 +51,7 @@ function App() {
             <div className="text-banner">
               <h1>Full Stack Web Developer</h1>
               <hr />
-              <p>
+              <p className="technologies ml2">
                 {" "}
                 HTML/CSS | Bootstrap | JavaScript | React | React Native |
                 NodeJs | Express{" "}
