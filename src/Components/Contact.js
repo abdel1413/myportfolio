@@ -17,15 +17,15 @@ class Contact extends Component {
     // console.log(e.target.value)
     const fm = e.target.value;
 
-    alert(`hey ${fm} your message was successful sent`);
+    //alert(`hey ${fm} your message was successful sent`);
   };
 
-  handleEmail = (e) => {
+  handleEmailChange = (e) => {
     this.setState({ email: e.target.value });
   };
 
-  handleContact = (e) => {
-    this.setState({ Contact: e.target.value });
+  handlePhoneChange = (e) => {
+    this.setState({ phone: e.target.value });
   };
 
   onFormSubmit = (event) => {
@@ -33,9 +33,11 @@ class Contact extends Component {
     event.preventDefault();
     console.log(this.state);
 
-    alert(`hey ${this.state.Name} your message was successful sent`);
+    alert(
+      `hey ${this.state.Name} ,your phone ${this.state.phone}  and your email ${this.state.email} were successful registered`
+    );
 
-    this.setState({ Name: "" });
+    this.setState({ Name: "", phone: "", email: "" });
   };
 
   render() {
@@ -44,7 +46,7 @@ class Contact extends Component {
         <div className="register-form">
           <h2 className="register">register </h2>
           <label>
-            Name
+            Name :
             <input
               type="text"
               name="name"
@@ -56,15 +58,25 @@ class Contact extends Component {
         <br />
         <div>
           <label>
-            Phone
-            <input type="text" name="name" />
+            Phone :
+            <input
+              type="text"
+              name="phone"
+              onChange={this.handlePhoneChange}
+              value={this.state.phone}
+            />
           </label>
         </div>
         <br />
         <div>
           <label>
-            Email
-            <input type="text" email="email" />
+            Email :
+            <input
+              type="text"
+              name="email"
+              onChange={this.handleEmailChange}
+              value={this.state.email}
+            />
           </label>
         </div>
         <button
@@ -73,8 +85,10 @@ class Contact extends Component {
             background: "#833ab4",
             padding: "5px",
             width: "90px",
+            color: "white",
             marginLeft: "120px",
             marginTop: "10px",
+            cursor: "pointer",
           }}
           onClick={this.onFormSubmit}
         >
