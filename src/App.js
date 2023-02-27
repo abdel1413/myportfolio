@@ -4,6 +4,7 @@ import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import { Link } from "react-router-dom";
 import photo from "./Components/abdel.jpeg";
 import Main from "./Components/Main";
+
 // import About from './Components/About';
 // import Resume from './Components/Resume';
 // import Project from './Components/Project';
@@ -49,12 +50,11 @@ function App() {
               </Grid>
             </div>
             <div className="text-banner">
-              <h1>Full Stack Web Developer</h1>
+              <h1>Full Stack Web Developer.</h1>
               <hr />
               <p className="technologies ml2">
-                {" "}
                 HTML/CSS | Bootstrap | JavaScript | React | React Native |
-                NodeJs | Express{" "}
+                NodeJs | Express.
               </p>
               <div className="Social_Links">
                 <a

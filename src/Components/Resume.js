@@ -8,7 +8,7 @@ class Resume extends Component {
     return (
       <div id="my-resume">
         <img id="resume" src={resume_png} alt="" />
-        <a href={resume} rel="noopener noreferrer" target="_blank">
+        <a href={resume} rel="noopener noreferrer" target="_blank" id="resume">
           {" "}
           Download
         </a>
